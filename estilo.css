@@ -1,6 +1,6 @@
 img {width:3cm;height:3cm;}
 #tabla {width:80%;margin:auto; background-color: aqua;}
-th#price {cursor:pointer;}
+
 .eliminar{cursor: pointer;color: blue;}
 li {color:blue;}
 /*si chequea muestra los productos sin cheque desaparecen los productos*/
