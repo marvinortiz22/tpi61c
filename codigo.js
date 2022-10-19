@@ -31,11 +31,7 @@ var productos=null;
 	  fotos=document.getElementsByClassName("foto");   
 	  prices=document.getElementsByClassName("price");
 	  eliminar=document.getElementsByClassName("eliminar");   
-	  if(orden===0) {orden=-1;precio.innerHTML="Precio"}
-	  else
-	     if(orden==1) {ordenarAsc(productos,"price");precio.innerHTML="Precio A";precio.style.color="darkgreen"}
-	     else 
-	       if(orden==-1) {ordenarDesc(productos,"price");precio.innerHTML="Precio D";precio.style.color="blue"}
+	  
 	
 		  
 	  	  listado.style.display="block";
@@ -105,18 +101,3 @@ function obtenerProductos() {
 				listarProductos(data)})
 }
 
-function ordenarDesc(p_array_json, p_key) {
-   p_array_json.sort(function (a, b) {
-      if(a[p_key] > b[p_key]) return -1;
-if(a[p_key] < b[p_key]) return 1;
-return 0;
-   });
-}
-
-function ordenarAsc(p_array_json, p_key) {
-   p_array_json.sort(function (a, b) {
-      if(a[p_key] > b[p_key]) return 1;
-if(a[p_key] < b[p_key]) return -1;
-return 0;
-   });
-}
